@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>CoderDocs - Bootstrap 4 Documentation Template For Software Projects</title>
+
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="description" content="Bootstrap 4 Template For Software Startups">
+	<meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+	<link rel="shortcut icon" href="https://einsteinfloripa.com.br/wp-content/uploads/favicons.png">
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+
+	<!-- FontAwesome JS-->
+	<script defer src="assets/fontawesome/js/all.min.js"></script>
+
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+	<link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css">
+
+	<!-- Theme CSS -->
+	<link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+
+	<style>
+		.embed-container {
+			position: relative;
+			margin: 20px 40px;
+			padding-bottom: 56.25%;
+			height: 0;
+			overflow: hidden;
+			max-width: 100%;
+		}
+
+		.embed-container iframe,
+		.embed-container object,
+		.embed-container embed {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+</head>
+
+<body class="docs-page">
+	<header class="header fixed-top">
+		<div class="branding docs-branding">
+			<div class="container-fluid position-relative py-2">
+				<div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none"
+						type="button">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<div class="site-logo"><a class="navbar-brand" href="index.html"><img
+                  class="logo-icon me-2"
+                  style="max-height: 52px"
+                  src="assets/images/logo.png"
+                  alt="logo"
+              /></a></div>
+				</div>
+				<!--//docs-logo-wrapper-->
+			</div>
+			<!--//container-->
+		</div>
+		<!--//branding-->
+	</header>
+	<!--//header-->
+
+
+	<div class="docs-wrapper">
+		<div id="docs-sidebar" class="docs-sidebar">
+			<div class="top-search-box d-lg-none p-3">
+				<form class="search-form">
+					<input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+					<button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+				</form>
+			</div>
+			<nav id="docs-nav" class="docs-nav navbar">
+				<ul class="section-items list-unstyled nav flex-column pb-3">
+					<li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span
+								class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>HTML</a>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">Definição 1.1</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">Sintaxe 1.2</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-1-3">Semântica 1.3</a></li>
+
+					<li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-2"><span
+								class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>CSS</a>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-2-1">Definição 2.1</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-2-2">Seletores 2.2</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-2-3">Cores 2.2</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-2-4">Flexbox e Grid 2.2</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-2-5">Media Queries 2.2</a></li>
+
+					<li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-3"><span
+								class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>JS</a>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-1">Definição 3.1</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-2">Variáveis e Operadores 3.2</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-3">Funções 3.3</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-4">DOM 3.4</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-5">Fetch API 3.5</a></li>
+                    
+					<li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-4"><span
+								class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>React Js</a>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-4-1">...! 4.1</a></li>
+                    
+					<li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-5"><span
+								class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>Mão na massa</a>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-5-1">...! 5.1</a></li>
+				</ul>
+
+			</nav>
+			<!--//docs-nav-->
+		</div>
+		<!--//docs-sidebar-->
+		<div class="docs-content">
+			<div class="container">
+				<article class="docs-article" id="section-1">
+					<header class="docs-header">
+						<h1 class="docs-heading">HTML <span class="docs-time">Última atualização:
+								24/11/2021</span>
+						</h1>
+						<!--//docs-intro-->
+						<!--//docs-code-block-->
+					</header>
+
+					<section class="docs-section" id="item-1-1">
+						<h2 class="section-heading">Definição 1.1</h2>
+						<p>(Linguagem de Marcação de HiperTexto). Como a própria sigla já diz, HTML é uma linguagem de marcação (Não programação), é o bloco de construção da Web. Leia: <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">https://developer.mozilla.org/pt-BR/docs/Web/HTML</a></p>
+
+                        
+
+						<div class='embed-container'><iframe src='https://www.youtube.com/embed/4dQtz1PpY9A'
+								frameborder='0' allowfullscreen></iframe></div>
+
+					</section>
+					<!--//section-->
+
+					<section class="docs-section" id="item-1-2">
+						<h2 class="section-heading">Sintaxe 1.2</h2>
+						<p>A sintaxe do HTML é bem simples, sendo constituída de “tags”.</p>
+
+                        <p>Um elemento HTML sempre possui uma tag de abertura: <code>&lt;div&gt;</code></p>
+
+                        <p>E geralmente outra de fechamento: <code>&lt;/div&gt;</code></p>
+
+                        <p>Dentro da tag HTML pode-se ter a definição de alguns atributos, exemplo: <code>&lt;input type="email"&gt;</code></p>
+
+                        <p>Exemplo de código HTML na esquerda e página renderizada na direita</p>
+
+                        <p class="codepen" data-height="550" data-default-tab="html,result" data-slug-hash="zYdgJmb" data-user="djonysdalmy" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/djonysdalmy/pen/zYdgJmb">
+  Untitled</a> by DjonysDalmy (<a href="https://codepen.io/djonysdalmy">@djonysdalmy</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+
+<p>Cada tag HTML carrega consigo uma carga semântica, mudando a forma como o navegador irá interpretar o código e por consequência criar a parte visual na tela.</p>
+
+<p>Conheça aqui as principais tags: <a href="https://blog.betrybe.com/desenvolvimento-web/comandos-e-tags-html/" target="_blank">https://blog.betrybe.com/desenvolvimento-web/comandos-e-tags-html/</a></p>
+
+<p>E teste as tags nesse editor:</p>
+
+<p class="codepen" data-height="300" data-theme-id="light" data-default-tab="html,result" data-slug-hash="bGrXmNL" data-editable="true" data-user="djonysdalmy" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/djonysdalmy/pen/bGrXmNL">
+  Untitled</a> by DjonysDalmy (<a href="https://codepen.io/djonysdalmy">@djonysdalmy</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+
+					</section>
+					<!--//section-->
+
+			</div>
+
+            
+			<div class="container">
+				<article class="docs-article" id="section-2">
+					<header class="docs-header">
+						<h1 class="docs-heading">CSS <span class="docs-time">Última atualização:
+								24/11/2021</span>
+						</h1>
+						<!--//docs-intro-->
+						<!--//docs-code-block-->
+					</header>
+
+					<section class="docs-section" id="item-2-1">
+						<h2 class="section-heading">Definição 1.1</h2>
+						<p>É uma linguagem de estilos (Também não é uma linguagem de programação) usada para descrever como os elementos do documentos serão apresentados (Cor, tamanho, margem, posição, animação etc...). Leia: <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">https://developer.mozilla.org/pt-BR/docs/Web/CSS</a></p>
+
+                        <p>O CSS é definido dentro da tag <code>&lt;style&gt;</code>, em um documento separado ou como um atributo style=”” de um elemento.</p>
+
+						<div class='embed-container'><iframe src='https://www.youtube.com/embed/229xfk3EEM8'
+								frameborder='0' allowfullscreen></iframe></div>
+
+                        <p>Se quisermos por exemplo alterar a estilização da tag <p>, escrevemos o seguinte:</p>
+
+                        <p class="codepen" data-height="300" data-theme-id="light" data-default-tab="html,result" data-slug-hash="JjygmyX" data-user="djonysdalmy" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/djonysdalmy/pen/JjygmyX">
+  Untitled</a> by DjonysDalmy (<a href="https://codepen.io/djonysdalmy">@djonysdalmy</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+
+<p>Dessa forma estamos definindo que todos os elementos de tag <code>&lt;pe&gt;</code> vão utilizar fonte Verdana, terão tamanho de 25px e cor vermelha.</p>
+
+					</section>
+					<!--//section-->
+
+					<section class="docs-section" id="item-2-2">
+						<h2 class="section-heading">Seletores 1.2</h2>
+
+                        <p>Hora de joguinho: <a href="https://flukeout.github.io/" target="_blank">https://flukeout.github.io/</a></p>
+
+					</section>
+					<!--//section-->
+
+			</div>
+
+			</article>
+
+
+
+    <footer class="footer">
+      <div class="footer-bottom text-center py-5">
+        <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+        <small class="copyright"
+          >Feito com <i class="fas fa-heart" style="color: #ff0000"></i> pelo
+          Vale do Sílicio</small
+        >
+      </div>
+    </footer>
+		</div>
+	</div>
+	</div>
+	<!--//docs-wrapper-->
+
+
+	<!-- Javascript -->
+	<script src="assets/plugins/popper.min.js"></script>
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+
+	<!-- Page Specific JS -->
+	<script src="assets/plugins/smoothscroll.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+	<script src="assets/js/highlight-custom.js"></script>
+	<script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>
+	<script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
+	<script src="assets/js/docs.js"></script>
+
+    <!-- Codepen -->
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+</body>
+
+</html>
