@@ -1,266 +1,1892 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Capacitação - Dev Web</title>
 
-<head>
-	<title>Capacitação - Dev Web</title>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<!-- Meta -->
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Bootstrap 4 Template For Software Startups"
+    />
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media" />
+    <link
+      rel="shortcut icon"
+      href="https://einsteinfloripa.com.br/wp-content/uploads/favicons.png"
+    />
 
-	<meta name="description" content="Bootstrap 4 Template For Software Startups">
-	<meta name="author" content="Xiaoying Riley at 3rd Wave Media">
-	<link rel="shortcut icon" href="https://einsteinfloripa.com.br/wp-content/uploads/favicons.png">
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
 
-	<!-- Google Font -->
-	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
 
-	<!-- FontAwesome JS-->
-	<script defer src="assets/fontawesome/js/all.min.js"></script>
+    <!-- Plugins CSS -->
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/plugins/simplelightbox/simple-lightbox.min.css"
+    />
 
-	<!-- Plugins CSS -->
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
-	<link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css">
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css" />
 
-	<!-- Theme CSS -->
-	<link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+    <style>
+      .embed-container {
+        position: relative;
+        margin: 20px 40px;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+      }
 
-	<style>
-		.embed-container {
-			position: relative;
-			margin: 20px 40px;
-			padding-bottom: 56.25%;
-			height: 0;
-			overflow: hidden;
-			max-width: 100%;
-		}
+      .embed-container iframe,
+      .embed-container object,
+      .embed-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
 
-		.embed-container iframe,
-		.embed-container object,
-		.embed-container embed {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-		}
-	</style>
-</head>
-
-<body class="docs-page">
-	<header class="header fixed-top">
-		<div class="branding docs-branding">
-			<div class="container-fluid position-relative py-2">
-				<div class="docs-logo-wrapper">
-					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none"
-						type="button">
-						<span></span>
-						<span></span>
-						<span></span>
-					</button>
-					<div class="site-logo"><a class="navbar-brand" href="index.html"><img
+  <body class="docs-page">
+    <header class="header fixed-top">
+      <div class="branding docs-branding">
+        <div class="container-fluid position-relative py-2">
+          <div class="docs-logo-wrapper">
+            <button
+              id="docs-sidebar-toggler"
+              class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none"
+              type="button"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="site-logo">
+              <a class="navbar-brand" href="index.html"
+                ><img
                   class="logo-icon me-2"
                   style="max-height: 52px"
                   src="assets/images/logo.png"
                   alt="logo"
-              /></a></div>
-				</div>
-				<!--//docs-logo-wrapper-->
-			</div>
-			<!--//container-->
-		</div>
-		<!--//branding-->
-	</header>
-	<!--//header-->
-
-
-	<div class="docs-wrapper">
-		<div id="docs-sidebar" class="docs-sidebar">
-			<div class="top-search-box d-lg-none p-3">
-				<form class="search-form">
-					<input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
-					<button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
-				</form>
-			</div>
-			<nav id="docs-nav" class="docs-nav navbar">
-				<ul class="section-items list-unstyled nav flex-column pb-3">
-					<li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span
-								class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>HTML</a>
-					</li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">Definição 1.1</a></li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">Sintaxe 1.2</a></li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#item-1-3">Semântica 1.3</a></li>
-
-					<li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-2"><span
-								class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>CSS</a>
-					</li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#item-2-1">Definição 2.1</a></li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#item-2-2">Seletores 2.2</a></li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#item-2-3">Cores 2.2</a></li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#item-2-4">Flexbox e Grid 2.2</a></li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#item-2-5">Media Queries 2.2</a></li>
-
-					<li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-3"><span
-								class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>JS</a>
-					</li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-1">Definição 3.1</a></li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-2">Variáveis e Operadores 3.2</a></li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-3">Funções 3.3</a></li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-4">DOM 3.4</a></li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-5">Fetch API 3.5</a></li>
-                    
-					<li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-4"><span
-								class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>React Js</a>
-					</li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#item-4-1">...! 4.1</a></li>
-                    
-					<li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-5"><span
-								class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>Mão na massa</a>
-					</li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#item-5-1">...! 5.1</a></li>
-				</ul>
-
-			</nav>
-			<!--//docs-nav-->
-		</div>
-		<!--//docs-sidebar-->
-		<div class="docs-content">
-			<div class="container">
-				<article class="docs-article" id="section-1">
-					<header class="docs-header">
-						<h1 class="docs-heading">HTML <span class="docs-time">Última atualização:
-								24/11/2021</span>
-						</h1>
-						<!--//docs-intro-->
-						<!--//docs-code-block-->
-					</header>
-
-					<section class="docs-section" id="item-1-1">
-						<h2 class="section-heading">Definição 1.1</h2>
-						<p>(Linguagem de Marcação de HiperTexto). Como a própria sigla já diz, HTML é uma linguagem de marcação (Não programação), é o bloco de construção da Web. Leia: <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">https://developer.mozilla.org/pt-BR/docs/Web/HTML</a></p>
-
-                        
-
-						<div class='embed-container'><iframe src='https://www.youtube.com/embed/4dQtz1PpY9A'
-								frameborder='0' allowfullscreen></iframe></div>
-
-					</section>
-					<!--//section-->
-
-					<section class="docs-section" id="item-1-2">
-						<h2 class="section-heading">Sintaxe 1.2</h2>
-						<p>A sintaxe do HTML é bem simples, sendo constituída de “tags”.</p>
-
-                        <p>Um elemento HTML sempre possui uma tag de abertura: <code>&lt;div&gt;</code></p>
-
-                        <p>E geralmente outra de fechamento: <code>&lt;/div&gt;</code></p>
-
-                        <p>Dentro da tag HTML pode-se ter a definição de alguns atributos, exemplo: <code>&lt;input type="email"&gt;</code></p>
-
-                        <p>Exemplo de código HTML na esquerda e página renderizada na direita</p>
-
-                        <p class="codepen" data-height="550" data-default-tab="html,result" data-slug-hash="zYdgJmb" data-user="djonysdalmy" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/djonysdalmy/pen/zYdgJmb">
-  Untitled</a> by DjonysDalmy (<a href="https://codepen.io/djonysdalmy">@djonysdalmy</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-
-<p>Cada tag HTML carrega consigo uma carga semântica, mudando a forma como o navegador irá interpretar o código e por consequência criar a parte visual na tela.</p>
-
-<p>Conheça aqui as principais tags: <a href="https://blog.betrybe.com/desenvolvimento-web/comandos-e-tags-html/" target="_blank">https://blog.betrybe.com/desenvolvimento-web/comandos-e-tags-html/</a></p>
-
-<p>E teste as tags nesse editor:</p>
-
-<p class="codepen" data-height="300" data-theme-id="light" data-default-tab="html,result" data-slug-hash="bGrXmNL" data-editable="true" data-user="djonysdalmy" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/djonysdalmy/pen/bGrXmNL">
-  Untitled</a> by DjonysDalmy (<a href="https://codepen.io/djonysdalmy">@djonysdalmy</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-
-					</section>
-					<!--//section-->
-
-			</div>
-
-            
-			<div class="container">
-				<article class="docs-article" id="section-2">
-					<header class="docs-header">
-						<h1 class="docs-heading">CSS <span class="docs-time">Última atualização:
-								24/11/2021</span>
-						</h1>
-						<!--//docs-intro-->
-						<!--//docs-code-block-->
-					</header>
-
-					<section class="docs-section" id="item-2-1">
-						<h2 class="section-heading">Definição 1.1</h2>
-						<p>É uma linguagem de estilos (Também não é uma linguagem de programação) usada para descrever como os elementos do documentos serão apresentados (Cor, tamanho, margem, posição, animação etc...). Leia: <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">https://developer.mozilla.org/pt-BR/docs/Web/CSS</a></p>
-
-                        <p>O CSS é definido dentro da tag <code>&lt;style&gt;</code>, em um documento separado ou como um atributo style=”” de um elemento.</p>
-
-						<div class='embed-container'><iframe src='https://www.youtube.com/embed/229xfk3EEM8'
-								frameborder='0' allowfullscreen></iframe></div>
-
-                        <p>Se quisermos por exemplo alterar a estilização da tag <p>, escrevemos o seguinte:</p>
-
-                        <p class="codepen" data-height="300" data-theme-id="light" data-default-tab="html,result" data-slug-hash="JjygmyX" data-user="djonysdalmy" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/djonysdalmy/pen/JjygmyX">
-  Untitled</a> by DjonysDalmy (<a href="https://codepen.io/djonysdalmy">@djonysdalmy</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-
-<p>Dessa forma estamos definindo que todos os elementos de tag <code>&lt;pe&gt;</code> vão utilizar fonte Verdana, terão tamanho de 25px e cor vermelha.</p>
-
-					</section>
-					<!--//section-->
-
-					<section class="docs-section" id="item-2-2">
-						<h2 class="section-heading">Seletores 1.2</h2>
-
-                        <p>Hora de joguinho: <a href="https://flukeout.github.io/" target="_blank">https://flukeout.github.io/</a></p>
-
-					</section>
-					<!--//section-->
-
-			</div>
-
-			</article>
-
-
-
-    <footer class="footer">
-      <div class="footer-bottom text-center py-5">
-        <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
-        <small class="copyright"
-          >Feito com <i class="fas fa-heart" style="color: #ff0000"></i> pelo
-          Vale do Sílicio</small
-        >
+              /></a>
+            </div>
+          </div>
+          <!--//docs-logo-wrapper-->
+        </div>
+        <!--//container-->
       </div>
-    </footer>
-		</div>
-	</div>
-	</div>
-	<!--//docs-wrapper-->
+      <!--//branding-->
+    </header>
+    <!--//header-->
 
+    <div class="docs-wrapper">
+      <div id="docs-sidebar" class="docs-sidebar">
+        <div class="top-search-box d-lg-none p-3">
+          <form class="search-form">
+            <input
+              type="text"
+              placeholder="Search the docs..."
+              name="search"
+              class="form-control search-input"
+            />
+            <button type="submit" class="btn search-btn" value="Search">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+        <nav id="docs-nav" class="docs-nav navbar">
+          <ul class="section-items list-unstyled nav flex-column pb-3">
+            <li class="nav-item section-title">
+              <a class="nav-link scrollto active" href="#section-1"
+                ><span class="theme-icon-holder me-2"
+                  ><i class="fas fa-map-signs"></i></span
+                >HTML</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-1-1">Definição 1.1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-1-2">Sintaxe 1.2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-1-3">Semântica 1.3</a>
+            </li>
 
-	<!-- Javascript -->
-	<script src="assets/plugins/popper.min.js"></script>
-	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+            <li class="nav-item section-title">
+              <a class="nav-link scrollto active" href="#section-2"
+                ><span class="theme-icon-holder me-2"
+                  ><i class="fas fa-map-signs"></i></span
+                >CSS</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-2-1">Definição 2.1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-2-2">Seletores 2.2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-2-3">Cores 2.3</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-2-4"
+                >Unidades de medida 2.4</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-2-5"
+                >Flexbox e Grid 2.5</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-2-6"
+                >Media Queries e responsividade 2.6</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-2-7">Desafio 2.7</a>
+            </li>
 
+            <li class="nav-item section-title">
+              <a class="nav-link scrollto active" href="#section-3"
+                ><span class="theme-icon-holder me-2"
+                  ><i class="fas fa-map-signs"></i></span
+                >JS</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-3-1">Definição 3.1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-3-2"
+                >Estruturas de dados 3.2</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-3-3"
+                >Funções e operadores 3.3</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-3-4"
+                >Estruturas Lógicas 3.4</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-3-5">Desafios 3.5</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-3-6"
+                >Funcões Avançado 2 3.6</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-3-7"
+                >Arrays Avançado 3.7</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-3-8">DOM 3.8</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-3-9">Fetch API 3.9</a>
+            </li>
 
-	<!-- Page Specific JS -->
-	<script src="assets/plugins/smoothscroll.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
-	<script src="assets/js/highlight-custom.js"></script>
-	<script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>
-	<script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
-	<script src="assets/js/docs.js"></script>
+            <li class="nav-item section-title">
+              <a class="nav-link scrollto active" href="#section-4"
+                ><span class="theme-icon-holder me-2"
+                  ><i class="fas fa-map-signs"></i></span
+                >React Js</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-4-1">... 4.1</a>
+            </li>
+          </ul>
+        </nav>
+        <!--//docs-nav-->
+      </div>
+      <!--//docs-sidebar-->
+      <div class="docs-content">
+        <div class="container">
+          <article class="docs-article" id="section-1">
+            <header class="docs-header">
+              <h1 class="docs-heading">
+                HTML
+                <span class="docs-time">Última atualização: 29/11/2021</span>
+              </h1>
+              <!--//docs-intro-->
+              <!--//docs-code-block-->
+            </header>
+
+            <section class="docs-section" id="item-1-1">
+              <h2 class="section-heading">Definição 1.1</h2>
+              <p>
+                (Linguagem de Marcação de HiperTexto). Como a própria sigla já
+                diz, HTML é uma linguagem de marcação (Não programação), é o
+                bloco de construção da Web. Leia:
+                <a
+                  href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"
+                  target="_blank"
+                  >https://developer.mozilla.org/pt-BR/docs/Web/HTML</a
+                >
+              </p>
+
+              <div class="embed-container">
+                <iframe
+                  src="https://www.youtube.com/embed/4dQtz1PpY9A"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-1-2">
+              <h2 class="section-heading">Sintaxe 1.2</h2>
+              <p>
+                A sintaxe do HTML é bem simples, sendo constituída de “tags”.
+              </p>
+
+              <p>
+                Um elemento HTML sempre possui uma tag de abertura:
+                <code>&lt;div&gt;</code>
+              </p>
+
+              <p>E geralmente outra de fechamento: <code>&lt;/div&gt;</code></p>
+
+              <p>
+                Dentro da tag HTML pode-se ter a definição de alguns atributos,
+                exemplo: <code>&lt;input type="email"&gt;</code>
+              </p>
+
+              <p>
+                Exemplo de código HTML na esquerda e página renderizada na
+                direita
+              </p>
+
+              <p
+                class="codepen"
+                data-height="550"
+                data-default-tab="html,result"
+                data-slug-hash="zYdgJmb"
+                data-user="djonysdalmy"
+                style="
+                  height: 300px;
+                  box-sizing: border-box;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  border: 2px solid;
+                  margin: 1em 0;
+                  padding: 1em;
+                "
+              >
+                <span
+                  >See the Pen
+                  <a href="https://codepen.io/djonysdalmy/pen/zYdgJmb">
+                    Untitled</a
+                  >
+                  by DjonysDalmy (<a href="https://codepen.io/djonysdalmy"
+                    >@djonysdalmy</a
+                  >) on <a href="https://codepen.io">CodePen</a>.</span
+                >
+              </p>
+
+              <div class="embed-container">
+                <iframe
+                  src="https://www.youtube.com/embed/qHHXjEmOJyk"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-1-3">
+              <h2 class="section-heading">Semântica 1.3</h2>
+              <p>
+                Cada tag HTML carrega consigo uma carga semântica, mudando a
+                forma como o navegador ou outros softwares irão interpretar o
+                código.
+              </p>
+
+              <p>
+                Conheça aqui as principais tags:
+                <a
+                  href="https://www.brasilcode.com.br/tags-html-conhecas-as-principais-e-mais-usadas/"
+                  target="_blank"
+                  >https://www.brasilcode.com.br/tags-html-conhecas-as-principais-e-mais-usadas/</a
+                >
+              </p>
+
+              <p>
+                A seção abaixo possui as tags mínimas de uma página html e está
+                liberada para edição, vá testando as tags dentro do
+                <code>body</code> e verificando o resultado a direita
+              </p>
+
+              <p
+                class="codepen"
+                data-height="550"
+                data-theme-id="dark"
+                data-default-tab="html,result"
+                data-slug-hash="bGrXmNL"
+                data-editable="true"
+                data-user="djonysdalmy"
+                style="
+                  height: 300px;
+                  box-sizing: border-box;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  border: 2px solid;
+                  margin: 1em 0;
+                  padding: 1em;
+                "
+              >
+                <span
+                  >See the Pen
+                  <a href="https://codepen.io/djonysdalmy/pen/bGrXmNL">
+                    Untitled</a
+                  >
+                  by DjonysDalmy (<a href="https://codepen.io/djonysdalmy"
+                    >@djonysdalmy</a
+                  >) on <a href="https://codepen.io">CodePen</a>.</span
+                >
+              </p>
+            </section>
+            <!--//section-->
+          </article>
+        </div>
+
+        <div class="container">
+          <article class="docs-article" id="section-2">
+            <header class="docs-header">
+              <h1 class="docs-heading">
+                CSS
+                <span class="docs-time">Última atualização: 29/11/2021</span>
+              </h1>
+              <!--//docs-intro-->
+              <!--//docs-code-block-->
+            </header>
+
+            <section class="docs-section" id="item-2-1">
+              <h2 class="section-heading">Definição 2.1</h2>
+              <p>
+                É uma linguagem de estilos (Também não é uma linguagem de
+                programação) usada para descrever como os elementos do
+                documentos serão apresentados (Cor, tamanho, margem, posição,
+                animação etc...). Leia:
+                <a
+                  href="https://developer.mozilla.org/pt-BR/docs/Web/CSS"
+                  target="_blank"
+                  >https://developer.mozilla.org/pt-BR/docs/Web/CSS</a
+                >
+              </p>
+
+              <p>
+                O CSS é definido dentro da tag <code>&lt;style&gt;</code>, em um
+                documento <code>.css</code> separado ou como um atributo
+                <code>style=""</code> de um elemento.
+              </p>
+
+              <div class="embed-container">
+                <iframe
+                  src="https://www.youtube.com/embed/229xfk3EEM8"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+
+              <p>
+                Se quisermos por exemplo alterar a estilização da tag &lt;p&gt;
+                podemos fazer o seguinte:
+              </p>
+
+              <p
+                class="codepen"
+                data-height="300"
+                data-theme-id="dark"
+                data-default-tab="html,result"
+                data-slug-hash="JjygmyX"
+                data-user="djonysdalmy"
+                style="
+                  height: 300px;
+                  box-sizing: border-box;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  border: 2px solid;
+                  margin: 1em 0;
+                  padding: 1em;
+                "
+              >
+                <span
+                  >See the Pen
+                  <a href="https://codepen.io/djonysdalmy/pen/JjygmyX">
+                    Untitled</a
+                  >
+                  by DjonysDalmy (<a href="https://codepen.io/djonysdalmy"
+                    >@djonysdalmy</a
+                  >) on <a href="https://codepen.io">CodePen</a>.</span
+                >
+              </p>
+
+              <p>
+                Dessa forma estamos definindo que todos os elementos de tag
+                <code>&lt;p&gt;</code> vão utilizar fonte <i>Verdana</i>, terão
+                tamanho de 25px e cor vermelha.
+              </p>
+
+              <p>Alternativamente é possível escrever o código dessa forma:</p>
+
+              <p>
+                <code
+                  >&lt;p style="font-family: verdana;font-size: 25px;color:
+                  red;"&gt;Meu texto&lt;/p&gt;</code
+                >
+              </p>
+
+              <p>
+                O resultado apresentado seria o mesmo, porém é uma boa prática
+                separar estrutura (HTML) da estilização (CSS) para uma melhor
+                organização:
+              </p>
+
+              <p
+                class="codepen"
+                data-height="300"
+                data-theme-id="dark"
+                data-default-tab="html,result"
+                data-slug-hash="RwLbKRJ"
+                data-user="djonysdalmy"
+                style="
+                  height: 300px;
+                  box-sizing: border-box;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  border: 2px solid;
+                  margin: 1em 0;
+                  padding: 1em;
+                "
+              >
+                <span
+                  >See the Pen
+                  <a href="https://codepen.io/djonysdalmy/pen/RwLbKRJ">
+                    Untitled</a
+                  >
+                  by DjonysDalmy (<a href="https://codepen.io/djonysdalmy"
+                    >@djonysdalmy</a
+                  >) on <a href="https://codepen.io">CodePen</a>.</span
+                >
+              </p>
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-2-2">
+              <h2 class="section-heading">Seletores 2.2</h2>
+
+              <img
+                class="img-fluid img-thumbnail mx-auto d-block"
+                src="assets/images/features/css1.jpg"
+              />
+
+              <p>
+                Os Seletores definem quais elementos um conjunto de regras CSS
+                se aplica. Nos exemplos anteriores utilizamos um
+                <strong>Seletor por tag</strong> para definirmos o estilo, mas
+                existem outros tipos de seletores, veja todos:
+              </p>
+
+              <ul>
+                <li>
+                  <strong>Seletor por tag:</strong> Escolhe elementos baseado em
+                  sua tag
+                  <br />
+                  <p>Ex: <code>p { ... }</code></p>
+                  <p>
+                    <s><code>&lt;h1&gt; Hello World &lt;/h1&gt;</code></s> (Não
+                    possui a tag <code>&lt;p&gt;</code>)
+                  </p>
+                  <p>
+                    <code>&lt;p&gt; E=mc² &lt;/p&gt;</code> (Possui a tag
+                    <code>&lt;p&gt;</code>)
+                  </p>
+                </li>
+
+                <li>
+                  <strong>Seletor por classe:</strong> Escolhe elementos
+                  baseados no valor de seu atributo <code>class</code>
+                  <br />
+                  <p>Ex: <code>.nome { ... }</code></p>
+                  <p>
+                    <code>&lt;h1 class="nome"&gt; Hello World &lt;/h1&gt;</code>
+                    (Possui a <code>class</code> nome)
+                  </p>
+                  <p>
+                    <code>&lt;p class="nome"&gt; Lorem Ipsum &lt;/p&gt;</code>
+                    (Possui a <code>class</code> nome)
+                  </p>
+                  <p>
+                    <s><code>&lt;p&gt; E=mc² &lt;/p&gt;</code></s> (Não possui a
+                    <code>class</code> nome)
+                  </p>
+                </li>
+
+                <li>
+                  <strong>Seletor por ID:</strong> Escolhe elementos baseados no
+                  valor de seu atributo <code>id</code>
+                  <br />
+                  <p>Ex: <code>#abc { ... }</code></p>
+                  <p>
+                    <code>&lt;p id="abc"&gt; Hello World &lt;/p&gt;</code>
+                    (Possui o <code>id</code> abc)
+                  </p>
+                  <p>
+                    <s
+                      ><code>&lt;p id="xyz"&gt; Hello World &lt;/p&gt;</code></s
+                    >
+                    (Não possui o <code>id</code> abc)
+                  </p>
+
+                  <div class="callout-block callout-block-info">
+                    <div class="content">
+                      <h4 class="callout-title">
+                        <span class="callout-icon-holder mr-1">
+                          <svg
+                            class="svg-inline--fa fa-info-circle fa-w-16"
+                            aria-hidden="true"
+                            focusable="false"
+                            data-prefix="fas"
+                            data-icon="info-circle"
+                            role="img"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                            data-fa-i2svg=""
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"
+                            ></path>
+                          </svg>
+                        </span>
+                        Nota
+                      </h4>
+                      <p>
+                        O atributo <code>id</code> define um
+                        <strong>identificador exclusivo</strong>
+                        (ID) que deve ser único por todo o documento.
+                      </p>
+                    </div>
+                    <!--//content-->
+                  </div>
+                </li>
+
+                <li>
+                  <strong>Seletor por atributo:</strong> Serve para selecionar
+                  todos os elementos com algum outro atributo
+                  <br />
+                  <p>Ex: <code>[type=text] { ... }</code></p>
+                  <p>
+                    <code>&lt;input type="text"&gt;</code>
+                    (Possui <code>type=text</code>)
+                  </p>
+                  <p>
+                    <s><code>&lt;input type="email"&gt;</code></s>
+                    (Não possui <code>type=text</code>)
+                  </p>
+                </li>
+
+                <li>
+                  <strong>Seletor universal:</strong> Serve para selecionar
+                  todos os elementos do documento
+                  <br />
+                  <p>Ex: <code>* { ... }</code></p>
+                </li>
+              </ul>
+
+              <p>
+                É possível combinar diferentes seletores utilizando os
+                combinadores do CSS:
+              </p>
+
+              <ul>
+                <li>
+                  <strong>Irmãos Adjacentes</strong> - Combinador
+                  <code>+</code>: Seleciona o elemento que está imediatamente
+                  após o elemento especificado anteriormente
+                </li>
+                <li>
+                  <strong>Irmãos</strong> - Combinador <code>~</code>: Seleciona
+                  o elemento (não necessariamente imediatamente) após o elemento
+                  especificado anteriormente
+                </li>
+                <li>
+                  <strong>Filhos</strong> - Combinador <code>></code>: selecina
+                  o elemento que são filhos diretos do elemento especificado
+                  anteriormente
+                </li>
+                <li>
+                  <strong>Descendentes</strong> - Combinador
+                  <code> </code> (Espaço em branco): selecina o elemento que são
+                  filhos do elemento especificado anteriormente (não é
+                  necessário que seja um filho direto)
+                </li>
+              </ul>
+
+              <p>
+                Veja alguns exemplos de utilização abaixo e aproveite para
+                editar o código e testar outros combinações. Procure entender o
+                papel de cada seletor e o motivo do resultado estar sendo
+                exibido dessa forma.
+              </p>
+
+              <p
+                class="codepen"
+                data-height="650"
+                data-theme-id="dark"
+                data-default-tab="css,result"
+                data-slug-hash="OJxLWwe"
+                data-editable="true"
+                data-user="djonysdalmy"
+                style="
+                  height: 300px;
+                  box-sizing: border-box;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  border: 2px solid;
+                  margin: 1em 0;
+                  padding: 1em;
+                "
+              >
+                <span
+                  >See the Pen
+                  <a href="https://codepen.io/djonysdalmy/pen/OJxLWwe">
+                    Untitled</a
+                  >
+                  by DjonysDalmy (<a href="https://codepen.io/djonysdalmy"
+                    >@djonysdalmy</a
+                  >) on <a href="https://codepen.io">CodePen</a>.</span
+                >
+              </p>
+
+              <p>
+                Outro importante mecanismo relacionado aos seletores do CSS são
+                as
+                <a
+                  href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-classes"
+                  target="_blank"
+                  >Pseudo-classes</a
+                >
+                e os
+                <a
+                  href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-elements"
+                  target="_blank"
+                  >Pseudo-elements</a
+                >
+              </p>
+
+              <div class="row">
+                <div class="col-lg-6 col-12">
+                  <div class="embed-container">
+                    <iframe
+                      src="https://www.youtube.com/embed/hM8yHG9-ElM"
+                      frameborder="0"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                  <div class="embed-container">
+                    <iframe
+                      src="https://www.youtube.com/embed/iPLICPgMpFA"
+                      frameborder="0"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+
+              <div class="callout-block callout-block-info">
+                <div class="content">
+                  <h4 class="callout-title">
+                    <span class="callout-icon-holder mr-1">
+                      <svg
+                        class="svg-inline--fa fa-info-circle fa-w-16"
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fas"
+                        data-icon="info-circle"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                        data-fa-i2svg=""
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"
+                        ></path>
+                      </svg> </span
+                    >Nota
+                  </h4>
+                  <p>
+                    Saiba mais sobre Pseudo-classes e Pseudo-elements:
+                    <a href="https://www.youtube.com/watch?v=kpXKwDGtjGE"
+                      >https://www.youtube.com/watch?v=kpXKwDGtjGE</a
+                    >
+                    /
+                    <a
+                      href="https://www.youtube.com/watch?v=e1KpKBHJOrA"
+                      target="_blank"
+                      >https://www.youtube.com/watch?v=e1KpKBHJOrA</a
+                    >
+                    (Conteúdo em Inglês)
+                  </p>
+                </div>
+                <!--//content-->
+              </div>
+
+              <p>
+                Hora de testar seu conhecimento e fixar o conteúdo: CSS Diner é
+                um jogo de navegador em que seu desafio é descobrir os seletores
+                CSS corretos para passar de fase, tente chegar ao final do jogo
+                e depois volte aqui:
+                <a
+                  href="https://einsteinfloripa.github.io/css-diner/"
+                  target="_blank"
+                  >https://einsteinfloripa.github.io/css-diner/</a
+                >
+              </p>
+
+              <p>
+                Confira a
+                <a
+                  href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/Reference"
+                  target="_blank"
+                  >Referência de CSS</a
+                >
+                para saber mias sobre alguma propriedade da linguagem.
+              </p>
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-2-3">
+              <h2 class="section-heading">Cores 2.3</h2>
+
+              <div class="embed-container">
+                <iframe
+                  src="https://www.youtube.com/embed/hlm0OQUqQXk"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+
+              <p
+                class="codepen"
+                data-height="500"
+                data-theme-id="dark"
+                data-default-tab="css,result"
+                data-slug-hash="MWEgqRX"
+                data-editable="true"
+                data-user="djonysdalmy"
+                style="
+                  height: 300px;
+                  box-sizing: border-box;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  border: 2px solid;
+                  margin: 1em 0;
+                  padding: 1em;
+                "
+              >
+                <span
+                  >See the Pen
+                  <a href="https://codepen.io/djonysdalmy/pen/MWEgqRX">
+                    Untitled</a
+                  >
+                  by DjonysDalmy (<a href="https://codepen.io/djonysdalmy"
+                    >@djonysdalmy</a
+                  >) on <a href="https://codepen.io">CodePen</a>.</span
+                >
+              </p>
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-2-4">
+              <h2 class="section-heading">Unidades de medida 2.4</h2>
+
+              <p>
+                As unidades de medida são meios de mensurar grandezas físicas,
+                tais como metro, litro entre outros. No CSS, mensuramos o
+                milímetro, o pixel, a porcentagem, etc.
+              </p>
+
+              <p>
+                No CSS um vasto conjunto de propriedades pode receber valores
+                numéricos relacionados a unidades de medida. São exemplos width,
+                height, margin, padding, border e muitas outras.
+              </p>
+
+              <p>
+                Existem dois grupos principais de unidades de medida: Absolutas
+                e Relativas. Veja exemplos:
+              </p>
+
+              <ul>
+                <li>
+                  <strong>Absolutas:</strong>
+                  <ul>
+                    <li>
+                      Pixel (px) - Pixel é o menor elemento em um dispositivo de
+                      exibição (por exemplo, um monitor), ao qual é possível
+                      atribuir-se uma cor. De uma forma mais simples, um pixel é
+                      o menor ponto que forma uma imagem digital.
+                    </li>
+                    <li>
+                      Points (pt) - Utilizada por designers, seu uso em geral é
+                      para fontes. Exemplo: Arial 12 (O 12 é de 12pt)
+                      Frequentemente está relacionada com layouts de impressões
+                      e é pouco recomendada para uso em tela.
+                    </li>
+                    <li>
+                      Centímetros (cm) - Unidade de medida que está no nosso dia
+                      a dia, porém é pouco usada em telas, uso mais relacionado
+                      a layout de impressão também.
+                    </li>
+                    <li>
+                      Milímetros (mm) - Equivalente a décima parte de um
+                      centímetro.
+                    </li>
+                    <li>
+                      Inches (in) - Alternativa aos cm e mm é a polegada, mais
+                      usada na América do Norte. 1in = 2,54cm
+                    </li>
+                    <li>
+                      Paica (pc) - Unidade herdada da tipografia. De forma geral
+                      pouco usada. 1pc = 0,42cm
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>Relativas</strong>
+                  <ul>
+                    <li>
+                      Ems (em) - Relativo ao tamanho da fonte (font-size) do
+                      elemento pai
+                    </li>
+                    <li>
+                      Rems (rem) - Relativo ao tamanho da fonte (font-size) do
+                      elemento raiz (no caso de um documento html a tag
+                      <code>html</code>)
+                    </li>
+                    <li>
+                      Porcentagem (%) - Relativo ao tamanho do elemento pai
+                    </li>
+                    <li>
+                      Viewport width (vw) - Viewport é a área visível de uma
+                      página web para o usuário. 1vw é igual a 1% da largura
+                      dessa área vísivel
+                    </li>
+                    <li>
+                      Viewport height (vh) - 1vwh é igual a 1% da altura da área
+                      vísivel da página (viewport)
+                    </li>
+
+                    <div class="callout-block callout-block-info">
+                      <div class="content">
+                        <h4 class="callout-title">
+                          <span class="callout-icon-holder mr-1">
+                            <svg
+                              class="svg-inline--fa fa-info-circle fa-w-16"
+                              aria-hidden="true"
+                              focusable="false"
+                              data-prefix="fas"
+                              data-icon="info-circle"
+                              role="img"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 512 512"
+                              data-fa-i2svg=""
+                            >
+                              <path
+                                fill="currentColor"
+                                d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"
+                              ></path>
+                            </svg>
+                          </span>
+                          Nota
+                        </h4>
+                        <p>
+                          A diferença entre vw/vh e a % é bem semelhante a
+                          diferença entre em e rem, onde a % é relativa ao
+                          contexto local do elemento e o vw é relativo ao
+                          tamanho total da largura da viewport do usuário.
+                        </p>
+                      </div>
+                      <!--//content-->
+                    </div>
+
+                    <li>
+                      Viewport minimun (vmin) - O vmin é relativo a menor
+                      dimensão da viewport, comparando vh e vw. Se 1vh é menor
+                      que 1vw o valor de 1vmin será igual a 1vh e vice versa.
+                    </li>
+                    <li>
+                      Viewport maximum (vmax) - O vmin é relativo a maior
+                      dimensão da viewport, comparando vh e vw. Se 1vh é maior
+                      que 1vw o valor de 1vmax será igual a 1vh e vice versa.
+                    </li>
+
+                    <li>
+                      x-height (ex) - Relativo a altura do caractere
+                      <strong>x</strong> da fonte utilizada (font-family) (Pouco
+                      usada, mais relacionada a alguns ajustes tipográficos mais
+                      específicos).
+                    </li>
+                    <li>
+                      Character unit (ch) - Relativo a largura do caractere
+                      <strong>0</strong> da font utilizada (font-family) (Pouco
+                      usada, mais relacionada a alguns ajustes tipográficos mais
+                      específicos).
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+
+              <div class="row">
+                <div class="col-lg-6 col-12">
+                  <div class="embed-container">
+                    <iframe
+                      src="https://www.youtube.com/embed/etM0JBeFbf8"
+                      frameborder="0"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                  <div class="embed-container">
+                    <iframe
+                      src="https://www.youtube.com/embed/g__c-7M9Xzk"
+                      frameborder="0"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Ok, mas qual usar? Isso vai depender bastante do contexto, de
+                forma geral opte por Unidades de medida relativas para buscar
+                uma maior responsividade e utilize unidades absolutas para
+                coisas pequenas na tela ou se está criando algo que será
+                impresso. Em telas <strong>em</strong> e
+                <strong>rem</strong> são unidades mais recomendadas para
+                questões relacionadas a font-size, margin, padding e media
+                queries, <strong>%</strong> e <strong>vw</strong>/<strong
+                  >vh</strong
+                >
+                para width/height e <strong>px</strong> para coisas pequenas
+                como box-shadows e borders.
+              </p>
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-2-5">
+              <h2 class="section-heading">Flexbox e Grid 2.5</h2>
+
+              <img
+                class="img-fluid img-thumbnail mx-auto d-block"
+                src="assets/images/features/flexgrid.jpg"
+              />
+
+              <div class="embed-container">
+                <iframe
+                  src="https://www.youtube.com/embed/Zk4Abd7fIEM"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+
+              <p>
+                Acesse o
+                <a
+                  href="https://www.origamid.com/projetos/css-grid-layout-guia-completo/"
+                  target="_blank"
+                  >Guia completo do Grid</a
+                >
+              </p>
+
+              <p>
+                Teste os seus conhecimentos sobre grid nesse jogo:
+                <a href="https://cssgridgarden.com/#pt-br" target="_blank"
+                  >https://cssgridgarden.com/#pt-br</a
+                >
+              </p>
+
+              <hr />
+
+              <div class="embed-container">
+                <iframe
+                  src="https://www.youtube.com/embed/ssc-cJZJrlI"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+
+              <p>
+                Acesse o
+                <a
+                  href="https://origamid.com/projetos/flexbox-guia-completo/"
+                  target="_blank"
+                  >Guia completo do Flexbox</a
+                >
+              </p>
+
+              <p>
+                Teste os seus conhecimentos sobre flexbox nesse jogo:
+                <a href="http://flexboxfroggy.com/#pt-br" target="_blank"
+                  >http://flexboxfroggy.com/#pt-br</a
+                >
+              </p>
+
+              <div class="embed-container">
+                <iframe
+                  src="https://www.youtube.com/embed/0mupCznyGqE"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-2-6">
+              <h2 class="section-heading">
+                Media Queries e responsividade 2.6
+              </h2>
+              <div class="embed-container">
+                <iframe
+                  src="https://www.youtube.com/embed/Wtyj7-9eY3s"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+
+              <div class="embed-container">
+                <iframe
+                  src="https://www.youtube.com/embed/AltqAPZzAqo"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-2-7">
+              <h2 class="section-heading">Desafio 2.7</h2>
+
+              <p>
+                Hora de por a mão na massa. Um Web Designer te enviou uma imagem
+                de uma página para ser desenvolvida. Essa tela deverá ser
+                responsiva, então você irá ter que fazer as adaptações
+                necessárias de acordo com as imagens enviadas para ela funcionar
+                bem tanto em telas de computador quanto em telas de celulares
+              </p>
+              <img
+                class="img-fluid img-thumbnail mx-auto d-block"
+                src="assets/images/features/desafioCss.png"
+              />
+
+              <img
+                class="img-fluid img-thumbnail mx-auto d-block"
+                src="assets/images/features/desafioCss-Mobile.png"
+              />
+
+              <p>
+                Procure a logo do Eintein Floripa no Google Drive da
+                instituição. Todos os botões/links deverão levar para o endereço
+                "https://einsteinfloripa.com.br/".
+              </p>
+
+              <p>
+                Você poderá utilizar o editor abaixo para criar a página (Clique
+                em "Edit on Codepen" para uma melhor visualização) ou editar os
+                arquivos na sua própria máquina usando um editor de texto.
+              </p>
+
+              <p
+                class="codepen"
+                data-height="600"
+                data-theme-id="dark"
+                data-default-tab="html,result"
+                data-slug-hash="BawBqbV"
+                data-editable="true"
+                data-user="djonysdalmy"
+                style="
+                  height: 300px;
+                  box-sizing: border-box;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  border: 2px solid;
+                  margin: 1em 0;
+                  padding: 1em;
+                "
+              >
+                <span
+                  >See the Pen
+                  <a href="https://codepen.io/djonysdalmy/pen/BawBqbV">
+                    Untitled</a
+                  >
+                  by DjonysDalmy (<a href="https://codepen.io/djonysdalmy"
+                    >@djonysdalmy</a
+                  >) on <a href="https://codepen.io">CodePen</a>.</span
+                >
+              </p>
+
+              <div class="callout-block callout-block-success">
+                <div class="content">
+                  <h4 class="callout-title">
+                    <span class="callout-icon-holder mr-1">
+                      <svg
+                        class="svg-inline--fa fa-thumbs-up fa-w-16"
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fas"
+                        data-icon="thumbs-up"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                        data-fa-i2svg=""
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M104 224H24c-13.255 0-24 10.745-24 24v240c0 13.255 10.745 24 24 24h80c13.255 0 24-10.745 24-24V248c0-13.255-10.745-24-24-24zM64 472c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zM384 81.452c0 42.416-25.97 66.208-33.277 94.548h101.723c33.397 0 59.397 27.746 59.553 58.098.084 17.938-7.546 37.249-19.439 49.197l-.11.11c9.836 23.337 8.237 56.037-9.308 79.469 8.681 25.895-.069 57.704-16.382 74.757 4.298 17.598 2.244 32.575-6.148 44.632C440.202 511.587 389.616 512 346.839 512l-2.845-.001c-48.287-.017-87.806-17.598-119.56-31.725-15.957-7.099-36.821-15.887-52.651-16.178-6.54-.12-11.783-5.457-11.783-11.998v-213.77c0-3.2 1.282-6.271 3.558-8.521 39.614-39.144 56.648-80.587 89.117-113.111 14.804-14.832 20.188-37.236 25.393-58.902C282.515 39.293 291.817 0 312 0c24 0 72 8 72 81.452z"
+                        ></path>
+                      </svg>
+                    </span>
+                    Dica
+                  </h4>
+                  <p>
+                    Crie uma conta no
+                    <a href="https://codepen.io/" target="_blank">Codepen</a>
+                    para poder salvar o seu trabalho
+                  </p>
+                </div>
+                <!--//content-->
+              </div>
+
+              <p>
+                Ao finalizar envie para o membro que está te acompanhando
+                durante essa capacitação para um feedback.
+              </p>
+            </section>
+            <!--//section-->
+          </article>
+        </div>
+
+        <div class="container">
+          <article class="docs-article" id="section-3">
+            <header class="docs-header">
+              <h1 class="docs-heading">
+                JS
+                <span class="docs-time">Última atualização: 29/11/2021</span>
+              </h1>
+              <!--//docs-intro-->
+              <!--//docs-code-block-->
+            </header>
+
+            <section class="docs-section" id="item-3-1">
+              <h2 class="section-heading">Definição 3.1</h2>
+
+              <div class="embed-container">
+                <iframe
+                  src="https://www.youtube.com/embed/Ri76yOpLrNg"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+
+              <div class="embed-container">
+                <iframe
+                  src="https://www.youtube.com/embed/NaVSbnnV75Q"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+
+              <p>Veja um exemplo de página com interatividade utilizando JS:</p>
+
+              <p
+                class="codepen"
+                data-height="600"
+                data-theme-id="dark"
+                data-default-tab="html,result"
+                data-slug-hash="PoJYxby"
+                data-editable="true"
+                data-user="djonysdalmy"
+                style="
+                  height: 300px;
+                  box-sizing: border-box;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  border: 2px solid;
+                  margin: 1em 0;
+                  padding: 1em;
+                "
+              >
+                <span
+                  >See the Pen
+                  <a href="https://codepen.io/djonysdalmy/pen/PoJYxby">
+                    Click Counter with JavaScript</a
+                  >
+                  by DjonysDalmy (<a href="https://codepen.io/djonysdalmy"
+                    >@djonysdalmy</a
+                  >) on <a href="https://codepen.io">CodePen</a>.</span
+                >
+              </p>
+
+              <div class="callout-block callout-block-warning">
+                <div class="content">
+                  <h4 class="callout-title">
+                    <span class="callout-icon-holder mr-1">
+                      <svg
+                        class="svg-inline--fa fa-bullhorn fa-w-18"
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fas"
+                        data-icon="bullhorn"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512"
+                        data-fa-i2svg=""
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M576 240c0-23.63-12.95-44.04-32-55.12V32.01C544 23.26 537.02 0 512 0c-7.12 0-14.19 2.38-19.98 7.02l-85.03 68.03C364.28 109.19 310.66 128 256 128H64c-35.35 0-64 28.65-64 64v96c0 35.35 28.65 64 64 64h33.7c-1.39 10.48-2.18 21.14-2.18 32 0 39.77 9.26 77.35 25.56 110.94 5.19 10.69 16.52 17.06 28.4 17.06h74.28c26.05 0 41.69-29.84 25.9-50.56-16.4-21.52-26.15-48.36-26.15-77.44 0-11.11 1.62-21.79 4.41-32H256c54.66 0 108.28 18.81 150.98 52.95l85.03 68.03a32.023 32.023 0 0 0 19.98 7.02c24.92 0 32-22.78 32-32V295.13C563.05 284.04 576 263.63 576 240zm-96 141.42l-33.05-26.44C392.95 311.78 325.12 288 256 288v-96c69.12 0 136.95-23.78 190.95-66.98L480 98.58v282.84z"
+                        ></path>
+                      </svg>
+                    </span>
+                    Aviso
+                  </h4>
+                  <p>
+                    Esse módulo de JavaScript irá acompanhar um curso completo
+                    de JS disponibilizado pelo canal no youtube
+                    <a
+                      href="https://www.youtube.com/channel/UCm63tB8wsKOVvxoU4iMpS2A"
+                      target="_blank"
+                      >Dev Aprender</a
+                    >. Fique ligado no tempo que é pedido para assistir os
+                    vídeos em cada tópico desse módulo
+                  </p>
+                </div>
+                <!--//content-->
+              </div>
+
+              <div class="alert alert-info" role="alert">
+                Para começar realize a instalação do VS code (Ou outro editor de
+                texto) ou crie uma conta no Repl.it. <br /><br />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-collection-play-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm6.258-6.437a.5.5 0 0 1 .507.013l4 2.5a.5.5 0 0 1 0 .848l-4 2.5A.5.5 0 0 1 6 12V7a.5.5 0 0 1 .258-.437z"
+                  />
+                </svg>
+                Assista o
+                <a href="https://youtu.be/i6Oi-YtXnAU" target="_blank">vídeo</a>
+                até o momento 00:07:36 para mais informações
+              </div>
+            </section>
+
+            <section class="docs-section" id="item-3-2">
+              <h2 class="section-heading">Estruturas de dados 3.2</h2>
+
+              <p>
+                Variável é um dos conceitos mais importantes no estudo de
+                programação, independente da plataforma ou linguagem utilizada.
+                Uma variável referencia a um espaço na memória do computador
+                utilizado para guardar informações que serão usadas em seus
+                programas.
+              </p>
+
+              <p>
+                Para elucidar o conceito, imagine que a memória de seu
+                computador é um armário com 100 gavetas e você guarda cada tipo
+                de objeto em uma gaveta diferente. Provavelmente você vai querer
+                criar etiquetas para referenciar o que guarda em cada gaveta.
+              </p>
+
+              <p>Mas por que o nome "variável"?</p>
+
+              <p>
+                Porque uma variável pode ter o seu valor alterado durante a
+                execução de um programa. Ainda na analogia anterior, suponha que
+                há uma gaveta "Meias" com 2 meias; se necessário, pode-se
+                adicionar mais 5 meias e, caso seja um colecionador, até 200.
+                Assim a gaveta "Meias" muda o seu valor.
+              </p>
+              <p>
+                Existem casos no programa que determinado dado não deve ser
+                alterado durante a execução, nesse caso se trata de um
+                Constante, outro conceito presente nas linguagens de
+                programação.
+              </p>
+
+              <p>
+                Em JS temos uma sintaxe bem simples para declarar variáveis e
+                constantes não sendo necessário referenciar o "tipo" de variável
+                que estamos criando como em outras linguagens de tipagem forte:
+              </p>
+
+              <p>
+                <code
+                  ><br />
+                  let ano = 2022; //Variável
+                  <br /><br />
+                  var nome = "Albert"; //Variável Global
+                  <br /><br />
+                  const pi = 3.14; //Constante, seu valor não pode ser alterado
+                  <br /><br />
+                  let temperatura = -7;
+                  <br /><br />
+                  let finalizado = true;
+                  <br /><br />
+                  let carro = { marca: "Fiat", cor: "Vermelho", ano: 2011 };
+                  <br /><br />
+                  let frutas = ["Maçã", "Uva", "Banana", "Laranja"];
+                </code>
+              </p>
+
+              <div class="callout-block callout-block-info">
+                <div class="content">
+                  <h4 class="callout-title">
+                    <span class="callout-icon-holder mr-1">
+                      <svg
+                        class="svg-inline--fa fa-info-circle fa-w-16"
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fas"
+                        data-icon="info-circle"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                        data-fa-i2svg=""
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"
+                        ></path>
+                      </svg>
+                    </span>
+                    Nota
+                  </h4>
+                  <p>
+                    Valores que são strings devem vir acompanhadas de aspas (").
+                  </p>
+                  <p>
+                    Números com casas decimais utilize sempre ponto (.) como
+                    separador.
+                  </p>
+                  <p>
+                    Dados booleanos (verdadeiro/falso) você poderá utilizar as
+                    palavras reservadas (true) ou (false)
+                  </p>
+                </div>
+                <!--//content-->
+              </div>
+
+              <div class="embed-container">
+                <iframe
+                  src="https://www.youtube.com/embed/ZOx7iTnBqFQ"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+
+              <div class="alert alert-info" role="alert">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-collection-play-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm6.258-6.437a.5.5 0 0 1 .507.013l4 2.5a.5.5 0 0 1 0 .848l-4 2.5A.5.5 0 0 1 6 12V7a.5.5 0 0 1 .258-.437z"
+                  />
+                </svg>
+                Assista o
+                <a href="https://youtu.be/i6Oi-YtXnAU?t=456" target="_blank"
+                  >vídeo</a
+                >
+                do momento 00:07:36 até o momento 00:32:35
+              </div>
+            </section>
+
+            <section class="docs-section" id="item-3-3">
+              <h2 class="section-heading">Funções e operadores 3.3</h2>
+
+              <p>
+                Funções são blocos de construção fundamentais em JavaScript. Uma
+                função é um procedimento de JavaScript - um conjunto de
+                instruções que executa uma tarefa ou calcula um valor.
+              </p>
+
+              <div class="alert alert-info" role="alert">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-collection-play-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm6.258-6.437a.5.5 0 0 1 .507.013l4 2.5a.5.5 0 0 1 0 .848l-4 2.5A.5.5 0 0 1 6 12V7a.5.5 0 0 1 .258-.437z"
+                  />
+                </svg>
+                Assista o
+                <a href="https://youtu.be/i6Oi-YtXnAU?t=1955" target="_blank"
+                  >vídeo</a
+                >
+                do momento 00:32:35 até o momento 01:06:09
+              </div>
+
+              <p>
+                Logo abaixo há o código de uma calculadora usando JS e HTML, no
+                entanto o código possui algumas inconsistências e não está
+                funcionando corretamente. Faça as devidas correções para que
+                seja apresentado o resultado de forma correta
+              </p>
+
+              <p
+                class="codepen"
+                data-height="600"
+                data-theme-id="dark"
+                data-default-tab="html,result"
+                data-slug-hash="KKXPbPg"
+                data-editable="true"
+                data-user="djonysdalmy"
+                style="
+                  height: 300px;
+                  box-sizing: border-box;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  border: 2px solid;
+                  margin: 1em 0;
+                  padding: 1em;
+                "
+              >
+                <span
+                  >See the Pen
+                  <a href="https://codepen.io/djonysdalmy/pen/KKXPbPg">
+                    Untitled</a
+                  >
+                  by DjonysDalmy (<a href="https://codepen.io/djonysdalmy"
+                    >@djonysdalmy</a
+                  >) on <a href="https://codepen.io">CodePen</a>.</span
+                >
+              </p>
+            </section>
+
+            <section class="docs-section" id="item-3-4">
+              <h2 class="section-heading">Estruturas Lógicas 3.4</h2>
+
+              <ul>
+                <li>
+                  <strong>Estruturas condicionais</strong> -
+                  <a
+                    href="https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Building_blocks/conditionals"
+                    target="_blank"
+                    >https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Building_blocks/conditionals</a
+                  >
+                  <ul>
+                    <li>if ... else</li>
+                    <li>switch</li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>Estruturas de repetição</strong> -
+                  <a
+                    href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Loops_and_iteration"
+                    target="_blank"
+                    >https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Loops_and_iteration</a
+                  >
+                  <ul>
+                    <li>for</li>
+                    <li>while</li>
+                    <li>Do ... While</li>
+                    <img
+                      class="img-fluid img-thumbnail mx-auto d-block"
+                      src="assets/images/features/doWhile.jpg"
+                    />
+                    <div class="callout-block callout-block-info">
+                      <div class="content">
+                        <h4 class="callout-title">
+                          <span class="callout-icon-holder mr-1">
+                            <svg
+                              class="svg-inline--fa fa-info-circle fa-w-16"
+                              aria-hidden="true"
+                              focusable="false"
+                              data-prefix="fas"
+                              data-icon="info-circle"
+                              role="img"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 512 512"
+                              data-fa-i2svg=""
+                            >
+                              <path
+                                fill="currentColor"
+                                d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"
+                              ></path>
+                            </svg>
+                          </span>
+                          Nota
+                        </h4>
+                        <p>
+                          Meme acima não está em JS, mas ainda assim ajuda a
+                          ilustrar a diferença entre while e do ... while
+                        </p>
+                      </div>
+                      <!--//content-->
+                    </div>
+                    <li>for ... in</li>
+                    <li>for ... of</li>
+                  </ul>
+                </li>
+              </ul>
+
+              <div class="alert alert-info" role="alert">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-collection-play-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm6.258-6.437a.5.5 0 0 1 .507.013l4 2.5a.5.5 0 0 1 0 .848l-4 2.5A.5.5 0 0 1 6 12V7a.5.5 0 0 1 .258-.437z"
+                  />
+                </svg>
+                Assista o
+                <a href="https://youtu.be/i6Oi-YtXnAU?t=4122" target="_blank"
+                  >vídeo</a
+                >
+                do momento 01:08:42 até o momento 01:35:34
+              </div>
+            </section>
+
+            <section class="docs-section" id="item-3-5">
+              <h2 class="section-heading">Desafios 3.5</h2>
+
+              <div class="alert alert-info" role="alert">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-collection-play-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm6.258-6.437a.5.5 0 0 1 .507.013l4 2.5a.5.5 0 0 1 0 .848l-4 2.5A.5.5 0 0 1 6 12V7a.5.5 0 0 1 .258-.437z"
+                  />
+                </svg>
+                Realize os mini-projetos propostos no vídeo (Do 1 ao 10)<br />
+                Mini-projeto 1 -
+                <a href="https://youtu.be/i6Oi-YtXnAU?t=3969" target="_blank"
+                  >https://youtu.be/i6Oi-YtXnAU?t=3969</a
+                ><br />
+                Mini-projetos 2-10 -
+                <a href="https://youtu.be/i6Oi-YtXnAU?t=5734" target="_blank"
+                  >https://youtu.be/i6Oi-YtXnAU?t=5734</a
+                >
+              </div>
+
+              <p>
+                Ao concluir os 10 desafios envie os arquivos para a pessoa que
+                está te acompanhando para feedbacks
+              </p>
+            </section>
+
+            <section class="docs-section" id="item-3-6">
+              <h2 class="section-heading">Funcões Avançado 3.6</h2>
+
+              <div class="alert alert-info" role="alert">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-collection-play-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm6.258-6.437a.5.5 0 0 1 .507.013l4 2.5a.5.5 0 0 1 0 .848l-4 2.5A.5.5 0 0 1 6 12V7a.5.5 0 0 1 .258-.437z"
+                  />
+                </svg>
+                Assista o
+                <a href="https://youtu.be/i6Oi-YtXnAU?t=8923" target="_blank"
+                  >vídeo</a
+                >
+                do momento 02:28:43 até o momento 03:03:41
+              </div>
+
+              <div class="embed-container">
+                <iframe
+                  src="https://www.youtube.com/embed/n5uiJr-v0KQ"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+
+              <img
+                class="img-fluid img-thumbnail mx-auto d-block"
+                src="assets/images/features/obj.gif"
+              />
+            </section>
+
+            <section class="docs-section" id="item-3-7">
+              <h2 class="section-heading">Arrays Avançado 3.7</h2>
+
+              <div class="alert alert-info" role="alert">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-collection-play-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm6.258-6.437a.5.5 0 0 1 .507.013l4 2.5a.5.5 0 0 1 0 .848l-4 2.5A.5.5 0 0 1 6 12V7a.5.5 0 0 1 .258-.437z"
+                  />
+                </svg>
+                Assista o
+                <a href="https://youtu.be/i6Oi-YtXnAU?t=12975" target="_blank"
+                  >vídeo</a
+                >
+                do momento 03:36:15 até o momento 04:13:53
+              </div>
+
+              <p>
+                Leia:
+                <a
+                  target="_blank"
+                  href="https://www.treinaweb.com.br/blog/javascript-metodos-de-arrays-que-voce-precisa-conhecer"
+                  >https://www.treinaweb.com.br/blog/javascript-metodos-de-arrays-que-voce-precisa-conhecer</a
+                >
+              </p>
+
+              <img
+                class="img-fluid img-thumbnail mx-auto d-block"
+                src="assets/images/features/jsArray.png"
+              />
+            </section>
+
+            <section class="docs-section" id="item-3-8">
+              <h2 class="section-heading">DOM 3.8</h2>
+
+              <blockquote class="blockquote text-center">
+                <p>
+                  <i>
+                    "Trabalhar com Web não é para qualquer um não, tem que ter o
+                    DOM."
+                  </i>
+                </p>
+                <footer class="blockquote-footer">Autor desconhecido</footer>
+              </blockquote>
+
+              <div class="embed-container">
+                <iframe
+                  src="https://www.youtube.com/embed/HOv9CqqAZk0"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="embed-container">
+                <iframe
+                  src="https://www.youtube.com/embed/UftSB4DaRU4"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </section>
+
+            <section class="docs-section" id="item-3-9">
+              <h2 class="section-heading">Fetch API 3.9</h2>
+
+              <p>
+                Leia:
+                <a
+                  href="https://www.devmedia.com.br/javascript-fetch/41206"
+                  target="_blank"
+                  >https://www.devmedia.com.br/javascript-fetch/41206</a
+                >
+              </p>
+
+              <div class="embed-container">
+                <iframe
+                  src="https://www.youtube.com/embed/fhIDgAfuJZ8"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+
+              <p>
+                Complete o código abaixo para realizar a busca por CEP com a
+                função fetch
+              </p>
+
+              <p
+                class="codepen"
+                data-height="600"
+                data-theme-id="dark"
+                data-default-tab="js,result"
+                data-slug-hash="oNGvmNN"
+                data-editable="true"
+                data-user="djonysdalmy"
+                style="
+                  height: 300px;
+                  box-sizing: border-box;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  border: 2px solid;
+                  margin: 1em 0;
+                  padding: 1em;
+                "
+              >
+                <span
+                  >See the Pen
+                  <a href="https://codepen.io/djonysdalmy/pen/oNGvmNN">
+                    Untitled</a
+                  >
+                  by DjonysDalmy (<a href="https://codepen.io/djonysdalmy"
+                    >@djonysdalmy</a
+                  >) on <a href="https://codepen.io">CodePen</a>.</span
+                >
+              </p>
+
+              <div class="callout-block callout-block-info">
+                <div class="content">
+                  <h4 class="callout-title">
+                    <span class="callout-icon-holder mr-1">
+                      <svg
+                        class="svg-inline--fa fa-info-circle fa-w-16"
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fas"
+                        data-icon="info-circle"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                        data-fa-i2svg=""
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"
+                        ></path>
+                      </svg>
+                    </span>
+                    Nota
+                  </h4>
+                  <p>
+                    Aproveite os conhecimento que adquiriu até agora e aplique
+                    em algum projeto pessoal seu. Isso irá ajudar você a
+                    aprender mais ainda sobre desenvolvimento e também irá
+                    aumentar o seu portfólio:
+                    <a
+                      href="https://www.youtube.com/watch?v=y4ltLH9iK8E"
+                      target="_blank"
+                      >Ideias de projetos</a
+                    >
+                  </p>
+                </div>
+                <!--//content-->
+              </div>
+            </section>
+          </article>
+        </div>
+
+        <div class="container">
+          <article class="docs-article" id="section-4">
+            <header class="docs-header">
+              <h1 class="docs-heading">
+                React JS
+                <span class="docs-time">Última atualização: 29/11/2021</span>
+              </h1>
+              <!--//docs-intro-->
+              <!--//docs-code-block-->
+            </header>
+
+            <section class="docs-section" id="item-4-1">
+              <h2 class="section-heading">... 4.1</h2>
+
+              <img class="img-fluid" src="assets/images/construcao.png" />
+            </section>
+            <!--//section-->
+          </article>
+        </div>
+
+        <footer class="footer">
+          <div class="footer-bottom text-center py-5">
+            <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+            <small class="copyright"
+              >Feito com
+              <i class="fas fa-heart" style="color: #ff0000"></i> pelo Vale do
+              Sílicio</small
+            >
+          </div>
+        </footer>
+      </div>
+    </div>
+    <!--//docs-wrapper-->
+
+    <!-- Javascript -->
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Page Specific JS -->
+    <script src="assets/plugins/smoothscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script src="assets/js/highlight-custom.js"></script>
+    <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>
+    <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
+    <script src="assets/js/docs.js"></script>
 
     <!-- Codepen -->
-    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-
-</body>
-
+    <script
+      async
+      src="https://cpwebassets.codepen.io/assets/embed/ei.js"
+    ></script>
+  </body>
 </html>
